@@ -33,18 +33,14 @@ margin-top: 30px;
 height: 1500px; /* Used in this example to enable scrolling */
 }
 
-<style>
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(5, 5, 5);
-  color: white;
-  text-align: center;
+/* Definieer de stijl voor de footer */
+footer {
+  background-color: #0d0d0d; /* Achtergrondkleur van de footer */
+  color: #fff; /* Tekstkleur in de footer */
+  padding: 20px; /* Binnenafstand rondom de inhoud van de footer */
+  text-align: center; /* Tekst uitlijnen in het midden van de footer */
+  position: fixed; /* Maak de footer vast aan de onderkant van het scherm */
+  left: 0; /* Plaats de footer helemaal links op het scherm */
+  bottom: 0; /* Plaats de footer helemaal onderaan het scherm */
+  width: 100%; /* Zorg ervoor dat de footer de volledige breedte van het scherm in beslag neemt */
 }
-</style>
-
-<div class="footer">
-  <p>Footer</p>
-</div>
