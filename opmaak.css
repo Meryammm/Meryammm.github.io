@@ -44,8 +44,4 @@ footer {
   bottom: 0; /* Plaats de footer helemaal onderaan het scherm */
   width: 100%; /* Zorg ervoor dat de footer de volledige breedte van het scherm in beslag neemt */
   
-  <style>
-        p {
-            margin-left: 20px; /* Voeg 20 pixels linker marge toe aan de paragraaf */
-        }
-    </style>
+  
