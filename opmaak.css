@@ -32,3 +32,19 @@ padding: 16px;
 margin-top: 30px;
 height: 1500px; /* Used in this example to enable scrolling */
 }
+
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
