@@ -44,3 +44,29 @@ footer {
   bottom: 0; /* Plaats de footer helemaal onderaan het scherm */
   width: 100%; /* Zorg ervoor dat de footer de volledige breedte van het scherm in beslag neemt */
 }
+<style>
+/* Voeg hier je CSS-styling toe als dat nodig is */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 10;
+    padding: 10;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+</style>
