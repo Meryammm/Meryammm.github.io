@@ -1,8 +1,7 @@
 body {
     background-color:darkgray;
-  }
-
-  body {margin:0;}
+    margin:0;
+}
 
 .navbar {
 overflow: hidden;
@@ -27,12 +26,13 @@ background: #ddd;
 color: black;
 }
 
-.main {
-padding: 16px;
-margin-top: 30px;
-height: 1500px; /* Used in this example to enable scrolling */
+/* Stijl voor het centreren van de container in het venster */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
  
 /* Stijl voor de footer onderaan de pagina */
 footer {
@@ -43,7 +43,7 @@ footer {
 }
 
 /* Stijl voor de container met grid-indeling */
- {
+{
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
