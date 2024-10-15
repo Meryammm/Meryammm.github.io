@@ -33,7 +33,7 @@ body {
   overflow: hidden;
 }
 
-.dropbtn {
+.dropdown .btn {
   font-size: 17px; /* Zorg ervoor dat de knopgrootte consistent is met de andere knoppen */
   border: none;
   outline: none;
@@ -44,7 +44,7 @@ body {
   cursor: pointer;
 }
 
-.dropdown-content {
+.dropdown-menu {
   display: none; /* Standaard verborgen */
   position: absolute;
   background-color: #f9f9f9;
@@ -52,20 +52,7 @@ body {
   z-index: 1;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-menu {
   display: block; /* Toon de dropdown bij hover */
 }
 
