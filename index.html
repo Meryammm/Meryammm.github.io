@@ -1,55 +1,64 @@
-<!DOCTYPE html> <!-- Dit is de tweede pagina van mijn site -->
-<html> <!-- Dit is het html-element -->
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="opmaak.css">
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="opmaak.css"> <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="Algemeen.html">Algemene informatie</a>
-        <a href="binairstelsel.html">Binairstelsel</a>
-        <a href="kleurmodellen.html">Kleurmodellen</a>
-        <a href="Bestandsformaten.html">Bestandsformaten</a>
-        <a href="Compressie.html">Compressie</a>
-        <div class="dropdown">
-            <button class="dropbtn">Computerarchitectuur</button>
-            <div class="dropdown-content">
-                <a href="dropdown.html">Drielagenmodel</a>
-                <a href="fysiekelaag.html">Fysieke laag</a>
-                <a href="logischelaag.html">Logische laag</a>
-                <a href="toepassingslaag.html">Toepassingslaag</a>
-            </div>
-        </div>
-    </div>
 
-    <header>
-        <h1>Home</h1>
-    </header>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Algemeen.html">Algemene informatie</a>
+  <a href="binairstelsel.html">Binairstelsel</a>
+  <a href="kleurmodellen.html">Kleurmodellen</a>
+  <a href="Bestandsformaten.html">Bestandsformaten</a>
+  <a href="Compressie.html">Compressie</a>
 
-    <main>
-        <p>Welkom op mijn website over de verschillende onderwerpen in informatica.</p>
-    </main>
+  <!-- Dropdown menu -->
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Computerarchitectuur
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="dropdown.html">Drielagenmodel</a></li>
+      <li><a href="fysiekelaag.html">Fysieke laag</a></li>
+      <li><a href="logischelaag.html">Logische laag</a></li>
+      <li><a href="toepassingslaag.html">Toepassingslaag</a></li>
+    </ul>
+  </div>
+</div>
 
-    <section>
-        <h2>Over mij</h2>
-        <p>Ik ben Meryam Attaf uit A5A en heb deze website als opdracht voor informatica gemaakt.</p>
-    </section>
+<header>
+  <h1>Home</h1>
+</header>
 
-    <section>
-        <h2>Voor meer informatie?</h2>
-        <p>Voor verdere vragen, mail naar meryam.attaf@vlietlandcollege.nl</p>
-    </section>
+<main>
+  <p>Welkom op mijn website over de verschillende onderwerpen in informatica.</p>
+</main>
 
-    <img src="Afbeeldingen/informatica homepage.jpg" width="620" height="380" alt="Informatica homepage">
+<section>
+  <h2>Over mij</h2>
+  <p>Ik ben Meryam Attaf uit A5A en heb deze website als opdracht voor informatica gemaakt.</p>
+</section>
 
-    <footer>
-        <div class="footer-content">
-            <p>Meryam Attaf</p>
-            <p>Informatica</p>
-            <p>© 2023. Alle rechten voorbehouden.</p>
-        </div>
-    </footer>
+<section>
+  <h2>Voor meer informatie?</h2>
+  <p>Voor verdere vragen, mail naar meryam.attaf@vlietlandcollege.nl</p>
+</section>
+
+<img src="Afbeeldingen/informatica homepage.jpg" width="620" height="380">
+
+<footer>
+  <div class="footer-content">
+    <p>Meryam Attaf</p>
+    <p>Informatica</p>
+    <p>© 2023. Alle rechten voorbehouden.</p>
+  </div>
+</footer>
+
 </body>
 </html>
