@@ -1,63 +1,58 @@
-<!DOCTYPE html> <!--dit is de tweede pagina van mijn site-->
-<html> <!--dit is het html-element-->
-  <head>
-    <title>Compressie</title> <!--titel-->
-    <link rel="stylesheet" href="opmaak.css"> <!--koppeling css-->
-    <meta charset="utf-8">
-  </head>
-  <body>
-    
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="Algemeen.html">Algemene informatie</a>
-        <a href="binairstelsel.html">Binairstelsel</a>
-        <a href="kleurmodellen.html">Kleurmodellen</a>
-        <a href="Bestandsformaten.html">Bestandsformaten</a>
-        <a href="Compressie.html">Compressie</a>
-          <div class="dropdown">
-            <button class="dropbtn">Computerarchitectuur</button>
-            <div class="dropdown-content">
-              <a href="dropdown.html">Drielagenmodel</a>
-              <a href="fysiekelaag.html">Fysieke laag</a>
-              <a href="logischelaag.html">Logische laag</a>
-              <a href="toepassingslaag.html">Toepassingslaag</a>
-            </div>
-          </div>
-        </div>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="opmaak.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-    <br> <!--regelafstand-->
-    <br>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-    <h1>Compressie</h1> <!--titel-->
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-    <p> <!--paragraaf-->
-        Compressie is een proces waarbij het gaat om het verminderen van de omvang van de digitale gegevens. Er bestaan twee soorten hoofdtypen compressie namelijk: lossless compressie en lossy compressie.
-    </p>
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-    <h2>Lossy Compressie</h2> <!--tussenkopje-->
-    <p>Lossy compressie is een manier om gegevens te verkleinen zonder dat de kwaliteit verloren raakt. Bepaalde details en informatie worden verwijderd om de grootte van de bestanden te verminderen.</p>
+.dropdown-content a:hover {background-color: #ddd;}
 
-    <h2>Lossless Compressie</h2>
-    <p>
-        Lossless compressie is een methode waarbij enige kwaliteit of gegevens verloren kunnen gaan bij compressie. Dit wordt vaak gebruikt voor mediabestanden zoals afbeeldingen, video's en geluiden. Populaire formaten voor lossy compressie zijn JPEG (voor afbeeldingen) en MP3 (voor audiobestanden).
-    </p>
+.dropdown:hover .dropdown-content {display: block;}
 
-    <h2>Waarom is compressie belangrijk?</h2>
-    <p>
-    Compressie is belangrijk om verschillende redenen. Het zorgt voor bescherming van de gegevens,bespaart ruimte, versnelt de overdracht en veel meer. Compressie is dus heel belangrijk voor de digitale wereld.
-    </p>
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body style="background-color:white;">
 
-    <img src="Afbeeldingen/compressie.avif"> <!--link foto-->
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
 
-    
-    
-  <footer>
-  <div class="footer-content">
-  <p>Meryam Attaf</p>
-  <p>Informatica</p> <!-- Informatie over het onderwerp van de pagina. -->
-  <p>© 2023. Alle rechten voorbehouden.</p> <!-- Het jaar van publicatie. -->
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="fysiekelaag.html">Fysieke laag</a>
+    <a href="logischelaag.html">Logische laag</a>
+    <a href="toepassingslaag.html">Toepassingslaag</a>
   </div>
-  </footer>
+</div>
 
-  </body>
+</body>
 </html>
