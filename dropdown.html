@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Menu Voorbeeld</title>
+    <title>Drielagenmodel</title>
     <link rel="stylesheet" href="opmaak.css"> <!-- Link naar je CSS bestand -->
 </head>
 <body>
-
 
    <div class="navbar">
       <a href="index.html">Home</a>
@@ -22,19 +21,27 @@
           <a href="dropdown.html">Drielagenmodel</a>
           <a href="fysiekelaag.html">Fysieke laag</a>
           <a href="logischelaag.html">Logische laag</a>
-          <a href="toepassingslaag.html">Toepassingslaag</a>
+          <div class="dropdown-submenu">
+            <button class="subdropbtn">Toepassingslaag</button>
+            <div class="dropdown-content">
+              <a href="app1.html">Applicatie 1</a>
+              <a href="app2.html">Applicatie 2</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="container">
         <h1>Drielagenmodel</h1>
+        <p>Het drielagenmodel is een concept in computerarchitectuur dat wordt gebruikt om de verschillende lagen van een systeem te scheiden. Deze lagen omvatten de fysieke laag, de logische laag, en de toepassingslaag. Elke laag heeft zijn eigen specifieke functie en werkt samen met de andere lagen om een compleet en functioneel systeem te vormen.</p>
     </div>
 
     <footer>
-        <p>&copy; 2024 Mijn Website</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Meryam Attaf - Informatica</p>
+        </div>
     </footer>
 
-    
- </body>
+</body>
 </html>
