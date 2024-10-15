@@ -1,0 +1,65 @@
+/* Dropdown styling */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #333; /* Kleur van de dropdown-knop */
+    font-family: inherit; /* Gebruikt dezelfde lettertype als de rest */
+  }
+  
+  /* Dropdown content (verberg standaard) */
+  .dropdown-content {
+    display: none;
+    position: absolute; /* Plaatsing onder de knop */
+    background-color: #f9f9f9; /* Achtergrondkleur van de dropdown */
+    min-width: 160px; /* Min breedte van de dropdown */
+    z-index: 1; /* Zorgt ervoor dat het boven andere elementen staat */
+  }
+  
+  /* Links in de dropdown */
+  .dropdown-content a {
+    float: none; /* Zorg ervoor dat links onder elkaar staan */
+    color: black; /* Kleur van de links */
+    padding: 12px 16px; /* Padding voor de links */
+    text-decoration: none; /* Geen onderstreping */
+    display: block; /* Volledige breedte */
+    text-align: left; /* Links uitlijnen */
+  }
+  
+  /* Hover effect voor links in de dropdown */
+  .dropdown-content a:hover {
+    background-color: #ddd; /* Achtergrondkleur bij hover */
+  }
+  
+  /* Weergave van de dropdown-content bij hover */
+  .dropdown:hover .dropdown-content {
+    display: block; /* Dropdown zichtbaar maken bij hover */
+  }
+  
+  /* Submenu styling */
+  .dropdown-submenu {
+    position: relative; /* Nodig voor positionering van submenus */
+  }
+  
+  .dropdown-submenu .dropdown-content {
+    left: 100%; /* Plaats het submenu rechts van het hoofdmenu */
+    top: 0; /* Zorg ervoor dat het submenu op dezelfde hoogte is */
+    display: none; /* Verberg standaard */
+  }
+  
+  /* Toon submenu bij hover op de hoofdlink */
+  .dropdown-submenu:hover .dropdown-content {
+    display: block; /* Toon submenu bij hover */
+  }
+  
+  /* Hover effect voor submenus */
+  .dropdown-submenu a:hover {
+    background-color: #ccc; /* Achtergrondkleur bij hover van submenu */
+  }

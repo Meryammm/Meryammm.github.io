@@ -1,76 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="opmaak.css">
-    <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="opmaak.css"> <!-- Jouw eigen CSS -->
+  <link rel="stylesheet" href="dropdown.css"> <!-- CSS voor de dropdown menu -->
+  <meta charset="utf-8">
 </head>
 <body>
 
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="Algemeen.html">Algemene informatie</a>
-        <a href="binairstelsel.html">Binairstelsel</a>
-        <a href="kleurmodellen.html">Kleurmodellen</a>
-        <a href="Bestandsformaten.html">Bestandsformaten</a>
-        <a href="Compressie.html">Compressie</a>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Algemeen.html">Algemene informatie</a>
+  <a href="binairstelsel.html">Binairstelsel</a>
+  <a href="kleurmodellen.html">Kleurmodellen</a>
+  <a href="Bestandsformaten.html">Bestandsformaten</a>
+  <a href="Compressie.html">Compressie</a>
 
-        <!-- Dropdown menu -->
-        <div class="dropdown">
-            <button class="dropbtn">Computerarchitectuur</button>
-            <div class="dropdown-content">
-                <a href="dropdown.html">Drielagenmodel</a>
-                <a href="fysiekelaag.html">Fysieke laag</a>
-                <a href="logischelaag.html">Logische laag</a>
-                <div class="dropdown-submenu">
-                    <a class="submenu-btn" href="#">Toepassingslaag</a>
-                    <div class="dropdown-content">
-                        <a href="#">Submenu 1</a>
-                        <a href="#">Submenu 2</a>
-                    </div>
-                </div>
-            </div>
+  <!-- Dubbel dropdown menu -->
+  <div class="dropdown">
+    <button class="dropbtn">Computerarchitectuur</button>
+    <div class="dropdown-content">
+      <a href="dropdown.html">Drielagenmodel</a>
+      <div class="dropdown-submenu">
+        <a href="fysiekelaag.html">Fysieke laag</a>
+        <div class="dropdown-content">
+          <a href="fysiekelaag1.html">Fysieke laag 1</a>
+          <a href="fysiekelaag2.html">Fysieke laag 2</a>
         </div>
+      </div>
+      <div class="dropdown-submenu">
+        <a href="logischelaag.html">Logische laag</a>
+        <div class="dropdown-content">
+          <a href="logischelaag1.html">Logische laag 1</a>
+          <a href="logischelaag2.html">Logische laag 2</a>
+        </div>
+      </div>
+      <a href="toepassingslaag.html">Toepassingslaag</a>
     </div>
+  </div>
+</div>
 
-    <header>
-        <h1>Home</h1>
-    </header>
+<br>
+<br>
 
-    <main>
-        <p>Welkom op mijn website over de verschillende onderwerpen in informatica.</p>
-    </main>
+<header>
+  <h1>Home</h1>
+</header>
 
-    <section>
-        <h2>Over mij</h2>
-        <p>Ik ben Meryam Attaf uit A5A en heb deze website als opdracht voor informatica gemaakt.</p>
-    </section>
+<main>
+  <p>Welkom op mijn website over de verschillende onderwerpen in informatica.</p>
+</main>
 
-    <section>
-        <h2>Voor meer informatie?</h2>
-        <p>Voor verdere vragen, mail naar meryam.attaf@vlietlandcollege.nl</p>
-    </section>
+<section>
+  <h2>Over mij</h2>
+  <p>Ik ben Meryam Attaf uit A5A en heb deze website als opdracht voor informatica gemaakt.</p>
+</section>
 
-    <img src="Afbeeldingen/informatica homepage.jpg" width="620" height="380">
+<section>
+  <h2>Voor meer informatie?</h2>
+  <p>Voor verdere vragen, mail naar meryam.attaf@vlietlandcollege.nl</p>
+</section>
 
-    <footer>
-        <div class="footer-content">
-            <p>Meryam Attaf</p>
-            <p>Informatica</p>
-            <p>© 2023. Alle rechten voorbehouden.</p>
-        </div>
-    </footer>
+<img src="Afbeeldingen/informatica homepage.jpg" width="620" height="380">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.submenu-btn').on("click", function(e) {
-                $(this).next('.dropdown-content').toggle(); // Toggle het submenu
-                e.stopPropagation(); // Stop het evenement
-                e.preventDefault(); // Voorkom standaard gedrag
-            });
-        });
-    </script>
+<footer>
+  <div class="footer-content">
+    <p>Meryam Attaf</p>
+    <p>Informatica</p>
+    <p>© 2023. Alle rechten voorbehouden.</p>
+  </div>
+</footer>
 
 </body>
 </html>
