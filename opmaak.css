@@ -148,24 +148,11 @@ body {
   background: #ddd;
   color: black;
 }
-/* Basis dropdown styling */
-.navbar {
-  background-color: #333;
-  overflow: hidden;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
+/* Dropdown-menu */
 .dropdown {
   float: left;
   overflow: hidden;
+  position: relative; /* Belangrijk om de positie van de dropdown-content goed te regelen */
 }
 
 .dropdown .dropbtn {
@@ -191,6 +178,8 @@ body {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  top: 100%; /* Dit zorgt ervoor dat de dropdown-content direct onder de button verschijnt */
+  left: 0; /* Zorgt ervoor dat de dropdown uitlijnt met de knop */
 }
 
 .dropdown-content a {
@@ -210,12 +199,13 @@ body {
   display: block;
 }
 
+/* Eventuele submenu's */
 .dropdown-submenu {
   position: relative;
 }
 
 .dropdown-submenu .dropdown-content {
-  left: 100%;
+  left: 100%; /* Zorgt ervoor dat het submenu naast de originele dropdown verschijnt */
   top: 0;
 }
 
