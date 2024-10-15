@@ -148,23 +148,53 @@ body {
   background: #ddd;
   color: black;
 }
+body {
+  background-color: darkgray; /* achtergrondkleur */
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; /* kleur menu */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px; /* grootte menu */
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
 /* Dropdown styling */
 .dropdown {
-  position: relative;
-  display: inline-block;
+  float: left;
+  overflow: hidden;
 }
 
 .dropbtn {
-  background-color: #333;
+  font-size: 17px; /* Zorg ervoor dat de knopgrootte consistent is met de andere knoppen */
+  border: none;
+  outline: none;
   color: white;
   padding: 14px 16px;
-  font-size: 17px;
-  border: none;
+  background-color: inherit;
+  font-family: inherit;
   cursor: pointer;
 }
 
 .dropdown-content {
-  display: none;
+  display: none; /* Standaard verborgen */
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -172,6 +202,7 @@ body {
 }
 
 .dropdown-content a {
+  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -184,10 +215,10 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block; /* Toon de dropdown bij hover */
 }
 
-/* Styling voor de submenu's */
+/* Submenu styling */
 .dropdown-submenu {
   position: relative;
 }
@@ -207,7 +238,6 @@ body {
   background-color: #ddd;
 }
 
-.dropdown-submenu .dropdown-content {
-  left: 100%; /* Positionering van het submenu */
-  top: 0;
+.dropdown-submenu:hover .dropdown-content {
+  display: block; /* Toon het submenu bij hover */
 }
