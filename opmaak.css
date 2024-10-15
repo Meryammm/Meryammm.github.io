@@ -176,6 +176,34 @@ body {
   color: black;
 }
 
+body {
+  background-color: darkgray; /* achtergrondkleur */
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; /* kleur menu */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px; /* grootte menu */
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
 /* Dropdown styling */
 .dropdown {
   float: left;
@@ -193,6 +221,7 @@ body {
   cursor: pointer;
 }
 
+/* Dropdown content styling */
 .dropdown-content {
   display: none; /* Standaard verborgen */
   position: absolute;
@@ -214,8 +243,9 @@ body {
   background-color: #ddd;
 }
 
+/* Toon de dropdown bij hover */
 .dropdown:hover .dropdown-content {
-  display: block; /* Toon de dropdown bij hover */
+  display: block; 
 }
 
 /* Submenu styling */
@@ -238,6 +268,22 @@ body {
   background-color: #ddd;
 }
 
+/* Submenu styling */
+.dropdown-submenu .dropdown-content {
+  display: none; /* Standaard verborgen */
+  position: absolute; /* Zorg ervoor dat het submenu goed positioneert */
+  left: 100%; /* Plaats het submenu aan de rechterkant van de subdropbtn */
+  top: 0; /* Zorg ervoor dat het submenu boven de subdropbtn begint */
+}
+
 .dropdown-submenu:hover .dropdown-content {
   display: block; /* Toon het submenu bij hover */
+}
+
+/* Stijl voor de footer onderaan de pagina */
+footer {
+  background-color: rgb(9, 10, 10);
+  color: #f8f3f3;
+  padding: 15px;
+  text-align: center;
 }
