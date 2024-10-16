@@ -1,6 +1,8 @@
 body {
   background-color: rgb(208, 192, 192); /* Achtergrondkleur */
   margin: 20;
+  width: 100%;
+  height: 100%;
 }
 
 /* Navbar styling */
