@@ -2,6 +2,7 @@ body {
   background-color: darkgray; /* Achtergrondkleur */
   margin: 0;
   padding-top: 50px;
+  overflow: auto;
 }
 
 /* Navbar styling */

@@ -72,10 +72,3 @@ body {
   display: block; /* Dropdown zichtbaar maken bij hover */
 }
 
-/* Footer styling */
-footer {
-  background-color: rgb(9, 10, 10);
-  color: #f8f3f3;
-  padding: 15px;
-  text-align: center;
-}
