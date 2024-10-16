@@ -1,6 +1,7 @@
 body {
   background-color: darkgray; /* Achtergrondkleur */
   margin: 0;
+  padding-top: 50px;
 }
 
 /* Navbar styling */
@@ -29,7 +30,7 @@ body {
 /* Dropdown styling */
 .dropdown {
   float: left; /* Plaats de dropdown naast andere elementen */
-  overflow: hidden; /* Zorg ervoor dat dropdown-inhoud goed wordt weergegeven */
+  overflow: visible; /* Zorg ervoor dat dropdown-inhoud goed wordt weergegeven */
 }
 
 .dropbtn {
