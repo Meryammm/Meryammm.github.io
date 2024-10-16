@@ -2,12 +2,11 @@ body {
   background-color: darkgray; /* Achtergrondkleur */
   margin: 0;
   padding-top: 50px;
-  overflow: auto;
 }
 
 /* Navbar styling */
 .navbar {
-  overflow: visible;
+ 
   background-color: #333; /* Kleur menu */
   position: fixed;
   top: 0;
