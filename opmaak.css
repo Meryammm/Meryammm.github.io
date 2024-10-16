@@ -5,7 +5,7 @@ body {
 
 /* Navbar styling */
 .navbar {
-  overflow: hidden;
+  overflow: visible;
   background-color: #333; /* Kleur menu */
   position: fixed;
   top: 0;
