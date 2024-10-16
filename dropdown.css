@@ -30,7 +30,7 @@ body {
 /* Dropdown styling */
 .dropdown {
   float: left; /* Plaats de dropdown naast andere elementen */
-  z-index: 100;
+  z-index: 1;
 }
 
 .dropbtn {
