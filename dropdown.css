@@ -49,7 +49,7 @@ body {
   position: absolute; /* Plaatsing onder de knop */
   background-color: #f9f9f9; /* Achtergrondkleur van de dropdown */
   min-width: 160px; /* Minimaal breedte van de dropdown */
-  z-index: 100; /* Zorgt ervoor dat het boven andere elementen staat */
+  z-index: 1; /* Zorgt ervoor dat het boven andere elementen staat */
 }
 
 /* Links in de dropdown */
