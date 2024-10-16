@@ -7,7 +7,7 @@ body {
 /* Navbar styling */
 .navbar {
   background-color: #333; /* Kleur menu */
-  position: fixed;
+  position: relative;
   top: 100;
   width: 100%;
 }
