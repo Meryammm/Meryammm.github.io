@@ -1,16 +1,3 @@
-/* Algemeen body-styling */
-body {
-  background-color: white; /* Achtergrondkleur van de pagina */
-  font-family: Arial, sans-serif; /* Lettertype voor de pagina */
-  margin: 0; /* Verwijder standaardmarges */
-}
-
-/* Navbar styling */
-.navbar {
-  overflow: hidden; /* Zorg ervoor dat de navbar goed wordt weergegeven */
-  background-color: #333; /* Achtergrondkleur van de navbar */
-}
-
 /* Dropdown styling */
 .dropdown {
   float: left; /* Plaats de dropdown naast andere elementen */
@@ -21,10 +8,9 @@ body {
   font-size: 17px; /* Grootte van de dropdown-knop */
   border: none; /* Geen rand */
   outline: none; /* Geen omtreklijn */
-  color: white; /* Kleur van de tekst */
+  color: #f2f2f2; /* Kleur van de tekst, overeenkomend met de navbar */
   padding: 14px 16px; /* Padding voor de knop */
-  background-color: #333; /* Kleur van de dropdown-knop */
-  font-family: inherit; /* Gebruikt hetzelfde lettertype als de rest */
+  background-color: #333; /* Kleur van de dropdown-knop, overeenkomend met de navbar */
   cursor: pointer; /* Wijzig de cursor naar pointer bij hover */
 }
 
@@ -55,34 +41,4 @@ body {
 /* Weergave van de dropdown-content bij hover */
 .dropdown:hover .dropdown-content {
   display: block; /* Dropdown zichtbaar maken bij hover */
-}
-
-/* Submenu styling */
-.dropdown-submenu {
-  position: relative; /* Nodig voor positionering van submenus */
-}
-
-.dropdown-submenu .dropdown-content {
-  left: 100%; /* Plaats het submenu rechts van het hoofdmenu */
-  top: 0; /* Zorg ervoor dat het submenu op dezelfde hoogte is */
-  display: none; /* Verberg standaard */
-}
-
-/* Toon submenu bij hover op de hoofdlink */
-.dropdown-submenu:hover .dropdown-content {
-  display: block; /* Toon submenu bij hover */
-}
-
-/* Hover effect voor submenus */
-.dropdown-submenu a:hover {
-  background-color: #ccc; /* Achtergrondkleur bij hover van submenu */
-}
-
-/* Responsive styling voor mobiele weergave */
-@media screen and (max-width: 600px) {
-  .navbar a, .dropdown .dropbtn {
-      float: none; /* Zorg ervoor dat elementen onder elkaar komen */
-      display: block; /* Volledige breedte */
-      text-align: left; /* Links uitlijnen */
-  }
 }
