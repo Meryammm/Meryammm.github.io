@@ -1,12 +1,10 @@
 body {
   background-color: darkgray; /* Achtergrondkleur */
   margin: 0;
-  overflow: auto;
 }
 
 /* Navbar styling */
 .navbar {
-  overflow: hidden;
   background-color: #333; /* Kleur menu */
   position: fixed;
   top: 0;
