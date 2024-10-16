@@ -1,45 +1,88 @@
-<style>
-.dropbtn {
-  background-color: #adb4b1;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+/* Algemeen body-styling */
+body {
+  background-color: white; /* Achtergrondkleur van de pagina */
+  font-family: Arial, sans-serif; /* Lettertype voor de pagina */
+  margin: 0; /* Verwijder standaardmarges */
 }
 
+/* Navbar styling */
+.navbar {
+  overflow: hidden; /* Zorg ervoor dat de navbar goed wordt weergegeven */
+  background-color: #333; /* Achtergrondkleur van de navbar */
+}
 
+/* Dropdown styling */
 .dropdown {
-  position: relative;
-  display: inline-block;
+  float: left; /* Plaats de dropdown naast andere elementen */
+  overflow: hidden; /* Zorg ervoor dat dropdown-inhoud goed wordt weergegeven */
 }
 
+.dropbtn {
+  font-size: 17px; /* Grootte van de dropdown-knop */
+  border: none; /* Geen rand */
+  outline: none; /* Geen omtreklijn */
+  color: white; /* Kleur van de tekst */
+  padding: 14px 16px; /* Padding voor de knop */
+  background-color: #333; /* Kleur van de dropdown-knop */
+  font-family: inherit; /* Gebruikt hetzelfde lettertype als de rest */
+  cursor: pointer; /* Wijzig de cursor naar pointer bij hover */
+}
 
+/* Dropdown content (verberg standaard) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  display: none; /* Standaard verbergen */
+  position: absolute; /* Plaatsing onder de knop */
+  background-color: #f9f9f9; /* Achtergrondkleur van de dropdown */
+  min-width: 160px; /* Minimaal breedte van de dropdown */
+  z-index: 1; /* Zorgt ervoor dat het boven andere elementen staat */
 }
 
-
+/* Links in de dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  float: none; /* Zorg ervoor dat links onder elkaar staan */
+  color: black; /* Kleur van de links */
+  padding: 12px 16px; /* Padding voor de links */
+  text-decoration: none; /* Geen onderstreping */
+  display: block; /* Volledige breedte */
+  text-align: left; /* Links uitlijnen */
 }
 
+/* Hover effect voor links in de dropdown */
+.dropdown-content a:hover {
+  background-color: #ddd; /* Achtergrondkleur bij hover */
+}
 
-.dropdown-content a:hover {background-color: #ddd;}
+/* Weergave van de dropdown-content bij hover */
+.dropdown:hover .dropdown-content {
+  display: block; /* Dropdown zichtbaar maken bij hover */
+}
 
+/* Submenu styling */
+.dropdown-submenu {
+  position: relative; /* Nodig voor positionering van submenus */
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown-submenu .dropdown-content {
+  left: 100%; /* Plaats het submenu rechts van het hoofdmenu */
+  top: 0; /* Zorg ervoor dat het submenu op dezelfde hoogte is */
+  display: none; /* Verberg standaard */
+}
 
+/* Toon submenu bij hover op de hoofdlink */
+.dropdown-submenu:hover .dropdown-content {
+  display: block; /* Toon submenu bij hover */
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-</style>
-</head>
-<body style="background-color:white;">
+/* Hover effect voor submenus */
+.dropdown-submenu a:hover {
+  background-color: #ccc; /* Achtergrondkleur bij hover van submenu */
+}
 
+/* Responsive styling voor mobiele weergave */
+@media screen and (max-width: 600px) {
+  .navbar a, .dropdown .dropbtn {
+      float: none; /* Zorg ervoor dat elementen onder elkaar komen */
+      display: block; /* Volledige breedte */
+      text-align: left; /* Links uitlijnen */
+  }
+}
